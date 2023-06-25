@@ -3,8 +3,8 @@ public:
     int lengthOfLongestSubstring(string s) {
         unordered_map<char,int> m;
 
-        if(s.size() == 0){
-            return 0;
+        if(s.size() == 0 || s.size() == 1){
+            return s.size() | 0;
         }
 
         if(s.size() == 1){
